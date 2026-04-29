@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_banner_hero_sections",
+  "info": {
+    "displayName": "Hero Section",
+    "icon": "alien"
+  },
+  "options": {},
+  "attributes": {
+    "imagen": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "files",
+        "images"
+      ]
+    },
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "subHeading": {
+      "type": "text"
+    },
+    "link": {
+      "type": "component",
+      "component": "component.link",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

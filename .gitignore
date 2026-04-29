@@ -1,7 +1,64 @@
-# Backend ignore files
-/backend/node_modules
-/backend/.env
+# =========================
+# ROOT (general)
+# =========================
 
-# frontend ignore files
+# Dependencias
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Variables de entorno
+.env
+.env.*
+!.env.example
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+
+# Archivos temporales
+*.log
+*.tmp
+
+
+# =========================
+# BACKEND (Strapi)
+# =========================
+
+/backend/node_modules/
+/backend/.env
+/backend/.env.*
+
+# Build y caché de Strapi
+/backend/build/
+/backend/.cache/
+/backend/.tmp/
+
+# Base de datos SQLite (si usas la default)
+/backend/*.db
+/backend/*.sqlite
+
+
+# =========================
+# FRONTEND (Next.js)
+# =========================
+
+/frontend/node_modules/
 /frontend/.env
-/frontend/node_modules
+/frontend/.env.*
+
+# Build de Next
+/frontend/.next/
+/frontend/out/
+
+# Permitir archivo de ejemplo
+!/frontend/.env.example
+!/backend/.env.example
